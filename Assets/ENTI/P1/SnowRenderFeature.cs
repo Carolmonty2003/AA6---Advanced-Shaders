@@ -51,7 +51,7 @@ public class StencilWriterPass : ScriptableRenderPass
     {
         _mat = mat;
         _filter = new FilteringSettings(RenderQueueRange.all, layer);
-        renderPassEvent = RenderPassEvent.AfterRenderingOpaques;
+        renderPassEvent = RenderPassEvent.BeforeRenderingPostProcessing - 1;
     }
 
     [System.Obsolete]
@@ -104,10 +104,15 @@ public class SnowFullscreenPass : ScriptableRenderPass
         cmd.GetTemporaryRT(TempRTId, desc, FilterMode.Point);
 
         var source = renderingData.cameraData.renderer.cameraColorTargetHandle;
+        var depth = renderingData.cameraData.renderer.cameraDepthTargetHandle;
 
         cmd.Blit(source, TempRTId);
         cmd.SetGlobalTexture(Shader.PropertyToID("_CameraColorTexture"), TempRTId);
-        cmd.Blit(TempRTId, source, _mat);
+
+        cmd.SetRenderTarget(source, RenderBufferLoadAction.Load, RenderBufferStoreAction.Store,
+                            depth, RenderBufferLoadAction.Load, RenderBufferStoreAction.Store);
+
+        cmd.DrawMesh(RenderingUtils.fullscreenMesh, Matrix4x4.identity, _mat, 0, 0);
 
         cmd.ReleaseTemporaryRT(TempRTId);
 

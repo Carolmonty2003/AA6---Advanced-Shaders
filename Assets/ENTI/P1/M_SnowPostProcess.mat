@@ -45,7 +45,7 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _SnowAmount: 0
+    - _SnowAmount: 0.024175644
     - _SnowScale: 2
     m_Colors:
     - _SnowColor: {r: 1, g: 1, b: 1, a: 1}

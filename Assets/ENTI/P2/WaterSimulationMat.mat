@@ -46,12 +46,13 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
+    - _EffectSpeed: 0.99
     - _PlayerHardness: 2
     - _PlayerRadius: 0.08
     - _QueueControl: 0
     - _QueueOffset: 0
     m_Colors:
-    - _PlayerUV: {r: 0.33625793, g: 0.27958462, b: 0, a: 0}
+    - _PlayerUV: {r: 1.1785104, g: 0.4345703, b: 0, a: 0}
     - _Position: {r: 170.99129, g: 8.406438, b: 203.55933, a: 0}
     - _SimulationCenter: {r: 172.44043, g: 8.93, b: 206.24568, a: 0}
     - _SimulationSize: {r: 7, g: 1, b: 7, a: 0}

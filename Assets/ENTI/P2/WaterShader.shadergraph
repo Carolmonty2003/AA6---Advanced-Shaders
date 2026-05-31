@@ -1175,8 +1175,8 @@
     "m_ObjectId": "07fbb45a18b343aca5381e8ba6af6a29",
     "m_Title": "FinalNormal",
     "m_Position": {
-        "x": -1136.9998779296875,
-        "y": 710.9999389648438
+        "x": -1137.0,
+        "y": 711.0
     }
 }
 
@@ -1364,8 +1364,8 @@
     "m_ObjectId": "0deae6ef59bf40d28de582cf961a515c",
     "m_Title": "Normal2",
     "m_Position": {
-        "x": -1715.0,
-        "y": 986.0
+        "x": -1714.999755859375,
+        "y": 986.0001220703125
     }
 }
 
@@ -1492,7 +1492,7 @@
         "x"
     ],
     "m_Precision": 0,
-    "m_PreviewExpanded": true,
+    "m_PreviewExpanded": false,
     "m_DismissedVersion": 0,
     "m_PreviewMode": 0,
     "m_CustomColors": {
@@ -1765,7 +1765,7 @@
     "m_Title": "blendWeight",
     "m_Position": {
         "x": -3382.999755859375,
-        "y": 863.9999389648438
+        "y": 864.0
     }
 }
 
@@ -3131,7 +3131,7 @@
     "m_Title": "Scaled Flow",
     "m_Position": {
         "x": -4319.0,
-        "y": -248.0
+        "y": -247.99993896484376
     }
 }
 
@@ -3829,8 +3829,8 @@
     "m_ObjectId": "73c26078e0ca46c7abe8e3aae1ab273d",
     "m_Title": "Albedo1",
     "m_Position": {
-        "x": -1692.9998779296875,
-        "y": -503.99993896484377
+        "x": -1693.0,
+        "y": -504.00006103515627
     }
 }
 
@@ -3841,7 +3841,7 @@
     "m_Title": "Albedo 2",
     "m_Position": {
         "x": -1696.0,
-        "y": -38.99999237060547
+        "y": -39.0
     }
 }
 
@@ -3880,7 +3880,7 @@
         "x"
     ],
     "m_Precision": 0,
-    "m_PreviewExpanded": true,
+    "m_PreviewExpanded": false,
     "m_DismissedVersion": 0,
     "m_PreviewMode": 0,
     "m_CustomColors": {
@@ -3993,8 +3993,8 @@
     "m_ObjectId": "7a0f85e98f0f467ba1fb22545fa1a791",
     "m_Title": "Normal1",
     "m_Position": {
-        "x": -1717.9998779296875,
-        "y": 604.0
+        "x": -1717.999755859375,
+        "y": 604.0001220703125
     }
 }
 
@@ -4010,10 +4010,10 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -3903.000244140625,
-            "y": 672.9999389648438,
+            "x": -3902.999755859375,
+            "y": 488.9999694824219,
             "width": 109.0,
-            "height": 34.00006103515625
+            "height": 34.000030517578128
         }
     },
     "m_Slots": [
@@ -4168,7 +4168,7 @@
     "m_ObjectId": "839a96948ac54d25bc1a2ff8902da80a",
     "m_Title": "Phase1",
     "m_Position": {
-        "x": -4060.999755859375,
+        "x": -4061.0,
         "y": 312.0
     }
 }
@@ -4766,8 +4766,8 @@
     "m_ObjectId": "a6c8ca5e60114b2bae0bfc5df6d60cd7",
     "m_Title": "FinalColor",
     "m_Position": {
-        "x": -1136.9998779296875,
-        "y": 101.00000762939453
+        "x": -1137.0,
+        "y": 101.0
     }
 }
 
@@ -5044,10 +5044,10 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -3078.000244140625,
-            "y": 113.00006103515625,
+            "x": -3078.0,
+            "y": -71.0,
             "width": 121.0,
-            "height": 34.000030517578128
+            "height": 34.0
         }
     },
     "m_Slots": [
@@ -6033,7 +6033,7 @@
     "m_ObjectId": "d826f4a586dd45b3b6ee91c7749fc144",
     "m_Title": "TiledUV",
     "m_Position": {
-        "x": -2696.0,
+        "x": -2695.999755859375,
         "y": 580.0
     }
 }
@@ -6201,7 +6201,7 @@
         "take away"
     ],
     "m_Precision": 0,
-    "m_PreviewExpanded": true,
+    "m_PreviewExpanded": false,
     "m_DismissedVersion": 0,
     "m_PreviewMode": 0,
     "m_CustomColors": {
@@ -6257,8 +6257,8 @@
     "m_ObjectId": "dcad4eaa711a4dd3aafc73bbdbc5587b",
     "m_Title": "Phase2",
     "m_Position": {
-        "x": -3388.999755859375,
-        "y": 652.9999389648438
+        "x": -3389.0,
+        "y": 652.9998779296875
     }
 }
 
@@ -6459,7 +6459,7 @@
     "m_Title": "UV1",
     "m_Position": {
         "x": -2734.0,
-        "y": -62.999961853027347
+        "y": -63.0
     }
 }
 
@@ -6832,7 +6832,7 @@
     "m_Title": "UV2",
     "m_Position": {
         "x": -2734.0,
-        "y": 253.00003051757813
+        "y": 253.00001525878907
     }
 }
 

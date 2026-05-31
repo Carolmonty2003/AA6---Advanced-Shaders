@@ -7,6 +7,7 @@ Shader "Custom/WaterSimulation"
         _UVVelocity ("UV Velocity", Vector) = (0, 0, 0, 0)
         _PlayerRadius ("Player Radius", Float) = 0.08
         _PlayerHardness ("Player Hardness", Float) = 2
+        _EffectSpeed ("Effect Speed", Float) = 0.99
     }
     SubShader
     {
@@ -23,6 +24,7 @@ Shader "Custom/WaterSimulation"
             float4 _UVVelocity;
             float _PlayerRadius;
             float _PlayerHardness;
+            float _EffectSpeed;
 
             fixed4 frag(v2f_img i) : SV_Target
             {
@@ -33,8 +35,8 @@ Shader "Custom/WaterSimulation"
                 float influence = pow(saturate(1.0 - dist / _PlayerRadius), _PlayerHardness);
 
                 float4 prev = tex2D(_MainTex, uv);
-                float flowX = (prev.r * 2.0 - 1.0) * 0.99;
-                float flowZ = (prev.g * 2.0 - 1.0) * 0.99;
+                float flowX = (prev.r * 2.0 - 1.0) * _EffectSpeed;
+                float flowZ = (prev.g * 2.0 - 1.0) * _EffectSpeed;
 
                 flowX = clamp(flowX + _UVVelocity.x * influence * 10.0, -1.0, 1.0);
                 flowZ = clamp(flowZ + _UVVelocity.y * influence * 10.0, -1.0, 1.0);
